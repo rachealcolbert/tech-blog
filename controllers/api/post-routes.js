@@ -11,7 +11,6 @@ router.get('/', (req, res) => {
                 'id',
                 'post_text',
                 'title',
-                'created_at',
             ],
         })
         .then(dbPostData => {
@@ -21,7 +20,6 @@ router.get('/', (req, res) => {
 
             res.render('homepage', {
                 posts,
-                loggedIn: req.session.loggedIn
             });
         })
         .catch(err => {

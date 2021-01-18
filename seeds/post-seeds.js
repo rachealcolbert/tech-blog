@@ -4,7 +4,7 @@ const {
 
 const postdata = [{
         title: "These wireless headphones double as hearing aids – Future Blink",
-        post_text: "Rather than releasing any new cameras for CES 2021, Canon is doing something different: Letting you take pictures from space. The company has unveiled an interactive site that allows you to use its CE-SAT-1 satellite, equipped with a lightly modified 5D Mark III DSLR, to grab simulated photos of locations including New York City, the Bahamas and Dubai. Canon launched the wine barrel-sized microsatellite back in June of 2017. It holds an EOS 5D Mark III camera that’s fitted with a 40 cm Cassegrain-type (mirror) 3720mm telescope. Orbiting at a 600 km orbit (375 miles), it provides about a 36-inch ground resolution within a 3x2 mile frame, Canon claims. (By contrast, the world’s highest-resolution satellite, WorldView-4, can resolve down to 12 inches.) It also houses a PowerShot S110 for wider images.",
+        post_text: "Rather than releasing any new cameras for CES 2021, Canon is doing something different: Letting you take pictures from space.",
         user_id: 1,
     },
     {
