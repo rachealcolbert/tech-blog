@@ -1,11 +1,24 @@
 const router = require('express').Router();
+const sequelize = require('../config/connection');
+const {
+  Post
+} = require('../models');
 
 router.get('/', (req, res) => {
-  res.render('homepage', {
-    id: 1,
-    post_text: "Rather than releasing any new cameras for CES 2021, Canon is doing something different: Letting you take pictures from space.",
-    title: "These wireless headphones double as hearing aids – Future Blink",
-  });
+  Post.findAll({
+      attributes: [
+        'id',
+        'post_text',
+        'title',
+      ],
+    })
+    .then(dbPostData => {
+      res.render('homepage', dbPostData[0]);
+    })
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 module.exports = router;
